@@ -1,0 +1,10 @@
+{
+    "source-path":"../",
+    "update":"true",
+    "upgrade": "false",
+    "package-list" : 
+    [
+        {"name":"perl"},
+        {"name":"metview"}
+    ]
+}

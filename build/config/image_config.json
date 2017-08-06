@@ -1,0 +1,6 @@
+{
+    "image-name":"test_image",
+    "base-image":"debian",
+    "base-image-tag":"jessie",
+    "maintainer":"dev"
+}
