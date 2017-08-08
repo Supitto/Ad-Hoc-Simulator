@@ -2,5 +2,6 @@
     "image-name":"test_image",
     "base-image":"debian",
     "base-image-tag":"jessie",
-    "maintainer":"dev"
+    "maintainer":"dev",
+    "apt-config-path":"./"
 }

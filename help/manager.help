@@ -1,0 +1,6 @@
+This is the manager help screen:
+
+dependencies        To manage the containers dependencies
+properties          To manage the containers properties
+help                Show this screen
+quit or EOF         Go back to the main menu

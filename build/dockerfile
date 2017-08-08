@@ -1,0 +1,6 @@
+FROM debian:jessie
+LABEL maintainer="dev"
+ADD ["config/../sources.list", "/etc/apt/"]
+RUN apt-get update -y 
+RUN apt-get install -y fortune-mod
+ENTRYPOINT "/usr/games/fortune"

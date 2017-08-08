@@ -1,10 +1,10 @@
 {
-    "source-path":"../",
-    "update":"true",
     "upgrade": "false",
-    "package-list" : 
-    [
-        {"name":"perl"},
-        {"name":"metview"}
+    "source-path": "../",
+    "update": "true",
+    "package-list": [
+        {
+            "name": "fortune-mod"
+        }
     ]
 }

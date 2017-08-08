@@ -1,0 +1,17 @@
+This is the dependencies manager help screen:
+
+Usage [command] [option] [name]
+
+Commands:
+
+add             Add a dependencie
+remove          Remove a dependencie
+modify          Modify a dependencie
+help            Show this screen
+
+Options:
+
+APT             Apply the command to the APT dependencies
+make            Apply the command to the make dependencies
+
+All commands support "[comand] help"

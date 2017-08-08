@@ -6,11 +6,11 @@ class Dockerfile:
         global basePath
         basePath = path
 
-    
     def getDockeFileString(self):
         return ""
 
     def getJSON(self, path):
+        print("recovering "+basePath+path)
         bufferFile = open(basePath+path,'r')
         config =  json.loads(bufferFile.read())
         bufferFile.close()
@@ -24,10 +24,12 @@ class Dockerfile:
     def WriteFile(self):
         endFile = open(basePath+"dockerfile",'w')
         #dockerfile header
+        print("Making dockerfile header ....")
         image_config = self.getJSON("config/image_config.json")
         endFile.write("FROM "+image_config["base-image"]+":"+image_config["base-image-tag"]+"\n" )
         endFile.write("LABEL maintainer=\""+image_config["maintainer"]+"\"\n" )
         #making APT work
+        print("Making dockerfile apt session ...")
         apt_config = self.getJSON("config/apt_config.json")
         endFile.write("ADD [\"config/"+apt_config["source-path"]+"sources.list"+"\", \"/etc/apt/\"]\n")
         if(self.isTrue(apt_config["update"])):

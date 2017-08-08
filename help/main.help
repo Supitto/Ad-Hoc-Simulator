@@ -1,0 +1,8 @@
+This is the help screen;
+
+build           To build a container
+manage          To manage containers
+simulate        To enter in the ad-hoc simulator
+deploy          To deploy a container
+config          To twist configurations
+quit or EOF     To close the program
